@@ -87,7 +87,7 @@ img{
     margin-top: 10px;
     text-decoration: none;
     display: inline-block;
-    background-color: #d9563f;
+    background-color: blue;
     color: #fff;
     font-size: 17px;
     padding: 5px 18px;
@@ -127,7 +127,7 @@ img{
 .item {
     flex: 1;
     margin: 5px;
-    background: tomato;
+    background: lightblue;
     text-align: center;
     font-size: 1.5em;
 }
@@ -142,4 +142,24 @@ h1 {
 body {
     font-family: monospace;
     color: #333;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+.a {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    background: lightblue;
+}
+
+.a div:last-of-type {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
