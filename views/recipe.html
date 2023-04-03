@@ -1,57 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <title>Receitas</title>
 </head>
 
 <body>
     <nav class="h-menu">
         <ul>
-            <li class="active"><a href="#">Perfil</a></li>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="#">Perfil</a></li>
             <li><a href="#">Listar Pedidos</a></li>
-            <li><a href="receitas.html">Minhas receitas</a></li>
+            <li><a href="recipe.html">Minhas receitas</a></li>
         </ul>
-        
     </nav>
 
-    <div class="cards">
-        <div class="card">
-            <img src="pizza.jpg">
+    <section class="container nowrap">
+        <div class="item">
+            <i class="material-icons" style="font-size:48px;color:white;">add</i>
             <div class="content">
-                <h2>Pizza</h2>
-                <h3>R$ 50</h3>
-                <h3>1,5 hora</h3>
-                <a href="#">Editar receita</a>
+                <a href="addrecipe.html">Adicionar receita</a>
             </div>
         </div>
-    </div>
 
-    <div class="cards">
-        <div class="card">
-            <img src="lasanha.jpg">
+        <div class="item">Pizza
+            <img src="../image/pizza.jpg">
             <div class="content">
-                <h2>Lasanha</h2>
-                <h3>R$ 70</h3>
-                <h3>3 horas</h3>
-                <a href="#">Editar receita</a>
-            </div>
-        </div>
-    </div>
-
-    <div class="cards">
-        <div class="card">
-            <img src="macarrao.jpg">
-            <div class="content">
-                <h2>Mcarrão</h2>
                 <h3>R$ 60</h3>
                 <h3>1 hora</h3>
                 <a href="#">Editar receita</a>
             </div>
         </div>
-    </div>
+
+        <div class="item">Macarrão
+            <img src="../image/macarrao.jpg">
+            <div class="content">
+                <h3>R$ 40</h3>
+                <h3>1,5 horas</h3>
+                <a href="#">Editar receita</a>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="container nowrap">
+        <div class="item">Nhoque
+            <img src="../image/nhoque.jpg">
+            <div class="content">
+                <h3>R$ 65</h3>
+                <h3>1/2 horas</h3>
+                <a href="#">Editar receita</a>
+            </div>
+        </div>
+
+        <div class="item">Risotto
+            <img src="../image/risotto.jpg">
+            <div class="content">
+                <h3>R$ 100</h3>
+                <h3>2 horas</h3>
+                <a href="#">Editar receita</a>
+            </div>
+        </div>
+
+        <div class="item">Frango a passarinho
+            <img src="../image/frango.jpg">
+            <div class="content">
+                <h3>R$ 35</h3>
+                <h3>40 minutos</h3>
+                <a href="#">Editar receita</a>
+            </div>
+        </div>
+    </section>
+
 </body>
+
 </html>
