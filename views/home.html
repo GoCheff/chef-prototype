@@ -15,14 +15,13 @@
     <nav class="h-menu">
         <ul>
             <li><a href="home.html">Home</a></li>
-            <li><a href="#">Perfil</a></li>
             <li><a href="orderList.html">Listar Pedidos</a></li>
             <li><a href="recipe.html">Minhas receitas</a></li>
         </ul>
     </nav>
 
     <main>
-        <div class="a">
+        <div class="a" id="pedido1">
             <div>
                 Maicon
             </div>
@@ -33,12 +32,13 @@
                 5 pessoas
             </div>
             <div>
-                <button>Confirmar</button>
-                <button>Excluir</button>
+                <button onclick="alert('Pedido aceito com Sucesso!')">Aprovar</button>
+                <button onclick="deletarpedido1();alert('Pedido não aceito!')"
+                    id="reprovar_button1">Reprovar</button>
             </div>
         </div>
 
-        <div class="a">
+        <div class="a" id="pedido2">
             <div>
                 Matheus
             </div>
@@ -49,12 +49,13 @@
                 5 pessoas
             </div>
             <div>
-                <button>Confirmar</button>
-                <button>Excluir</button>
+                <button onclick="alert('Pedido aceito com Sucesso!')">Aprovar</button>
+                <button onclick="deletarpedido2();alert('Pedido não aceito!')"
+                    id="reprovar_button1">Reprovar</button>
             </div>
         </div>
 
-        <div class="a">
+        <div class="a" id="pedido3">
             <div>
                 Fulano tal
             </div>
@@ -65,12 +66,13 @@
                 14 pessoas
             </div>
             <div>
-                <button>Confirmar</button>
-                <button>Excluir</button>
+                <button onclick="alert('Pedido aceito com Sucesso!')">Aprovar</button>
+                <button onclick="deletarpedido3();alert('Pedido não aceito!')"
+                    id="reprovar_button1">Reprovar</button>
             </div>
         </div>
 
-        <div class="a">
+        <div class="a" id="pedido4">
             <div>
                 Luiz
             </div>
@@ -81,11 +83,45 @@
                 14 pessoas
             </div>
             <div>
-                <button>Confirmar</button>
-                <button>Excluir</button>
+                <button onclick="alert('Pedido aceito com Sucesso!')">Aprovar</button>
+                <button onclick="deletarpedido4();alert('Pedido não aceito!')"
+                    id="reprovar_button1">Reprovar</button>
             </div>
         </div>
     </main>
+
+
+    <script> function deletarpedido1() {
+
+            const pedido1 = document.getElementById("pedido1");
+            pedido1.remove();
+
+        }
+    </script>
+
+    <script> function deletarpedido2() {
+
+            const pedido2 = document.getElementById("pedido2");
+            pedido2.remove();
+
+        }
+    </script>
+
+    <script> function deletarpedido3() {
+
+            const pedido3 = document.getElementById("pedido3");
+            pedido3.remove();
+
+        }
+    </script>
+
+    <script> function deletarpedido4() {
+
+            const pedido4 = document.getElementById("pedido4");
+            pedido4.remove();
+
+        }
+    </script>
 </body>
 
 </html>
