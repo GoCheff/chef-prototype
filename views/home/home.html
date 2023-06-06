@@ -5,123 +5,78 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="../style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="home.js"></script>
     <title>Home</title>
-
-
 </head>
 
-<body>
-    <nav class="h-menu">
+<header class="menu-topo">
+    <nav>
         <ul>
-            <li><a href="home.html">Home</a></li>
-            <li><a href="orderList.html">Listar Pedidos</a></li>
-            <li><a href="recipe.html">Minhas receitas</a></li>
+            <li class="primeiro-item"><a href="#">Página Inicial</a></li>
+            <li><a href="#">Lista de pedidos</a></li>
+            <li><a href="#">Receitas</a></li>
+            <li><a href="#">Adicionar receita</a></li>
         </ul>
     </nav>
+</header>
 
+<body>
     <main>
-        <div class="a" id="pedido1">
-            <div>
-                Maicon
-            </div>
-            <div>
-                02/04/2023 21:44
-            </div>
-            <div>
-                5 pessoas
-            </div>
-            <div>
-                <button onclick="alert('Pedido aceito com Sucesso!')">Aprovar</button>
-                <button onclick="deletarpedido1();alert('Pedido não aceito!')"
-                    id="reprovar_button1">Reprovar</button>
-            </div>
-        </div>
 
-        <div class="a" id="pedido2">
-            <div>
-                Matheus
+        <div class="pedido">
+            <div class="numero-pedido">
+                <span>Pedido #1</span>
             </div>
-            <div>
-                01/04/2023 21:44
+            <div class="informacoes-pedido">
+                <div>
+                    <span>John Doe</span>
+                </div>
+                <div>
+                    <span><strong>Quantidade de Pessoas: 5</strong></span>
+                </div>
+                <div>
+                    <span><strong>Data e Hora:</strong></span>
+                    <span>2023-06-05 18:30</span>
+                </div>
             </div>
-            <div>
-                5 pessoas
-            </div>
-            <div>
-                <button onclick="alert('Pedido aceito com Sucesso!')">Aprovar</button>
-                <button onclick="deletarpedido2();alert('Pedido não aceito!')"
-                    id="reprovar_button1">Reprovar</button>
+            <div class="botoes-pedido">
+                <button class="btn-aceitar">Aceitar</button>
+                <button class="btn-recusar">Recusar</button>
             </div>
         </div>
 
-        <div class="a" id="pedido3">
-            <div>
-                Fulano tal
-            </div>
-            <div>
-                02/04/2023 21:44
-            </div>
-            <div>
-                14 pessoas
-            </div>
-            <div>
-                <button onclick="alert('Pedido aceito com Sucesso!')">Aprovar</button>
-                <button onclick="deletarpedido3();alert('Pedido não aceito!')"
-                    id="reprovar_button1">Reprovar</button>
-            </div>
-        </div>
 
-        <div class="a" id="pedido4">
-            <div>
-                Luiz
-            </div>
-            <div>
-                26/03/2023 16:12
-            </div>
-            <div>
-                14 pessoas
-            </div>
-            <div>
-                <button onclick="alert('Pedido aceito com Sucesso!')">Aprovar</button>
-                <button onclick="deletarpedido4();alert('Pedido não aceito!')"
-                    id="reprovar_button1">Reprovar</button>
+
+
+
+
+
+        <div class="pedido">
+            <div class="retangulo-branco">
+                <div class="numero-pedido">
+                    <span>Pedido #1</span>
+                </div>
+                <div class="informacoes-pedido">
+                    <div>
+                        <span>John Doe</span>
+                    </div>
+                    <div>
+                        <span><strong>Quantidade de Pessoas: 5</strong></span>
+                    </div>
+                    <div>
+                        <span><strong>Data e Hora:</strong></span>
+                        <span>2023-06-05 18:30</span>
+                    </div>
+                </div>
+                <div class="botoes-pedido">
+                    <button class="btn-aceitar">Aceitar</button>
+                    <button class="btn-recusar">Recusar</button>
+                </div>
             </div>
         </div>
-    </main>
 
 
-    <script> function deletarpedido1() {
-
-            const pedido1 = document.getElementById("pedido1");
-            pedido1.remove();
-
-        }
-    </script>
-
-    <script> function deletarpedido2() {
-
-            const pedido2 = document.getElementById("pedido2");
-            pedido2.remove();
-
-        }
-    </script>
-
-    <script> function deletarpedido3() {
-
-            const pedido3 = document.getElementById("pedido3");
-            pedido3.remove();
-
-        }
-    </script>
-
-    <script> function deletarpedido4() {
-
-            const pedido4 = document.getElementById("pedido4");
-            pedido4.remove();
-
-        }
-    </script>
 </body>
 
 </html>

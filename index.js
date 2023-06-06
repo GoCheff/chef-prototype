@@ -1,7 +1,7 @@
-var btnBuscar = document.getElementById("btnbuscar");
+var btnHome = document.getElementById("btnhome");
 var btnRegistro = document.getElementById("btnregistro");
 
-btnBuscar.addEventListener("click", () => {
+btnHome.addEventListener("click", () => {
     const currentUrl = window.location.href;
 
     if (!currentUrl.includes("gocheff.github.io")) {
