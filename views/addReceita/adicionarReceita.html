@@ -1,29 +1,82 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="../style.css">
-    <title>Adicionar Receitas</title>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Adicionar nova receita</title>
 </head>
 
-<body>
-    <nav class="h-menu">
+<header class="menu-topo">
+    <nav>
         <ul>
-            <li><a href="home.html">Home</a></li>
-            <li><a href="#">Listar Pedidos</a></li>
-            <li><a href="recipe.html">Minhas receitas</a></li>
+            <li class="primeiro-item"><a href="../home/home.html">Página Inicial</a></li>
+            <li><a href="../verificarPedidos/verificarPedidos.html">Verificar pedidos</a></li>
+            <li><a href="../receitas/receitas.html">Receitas</a></li>
+            <li><a href="../addReceita/adicionarReceita.html">Adicionar receita</a></li>
         </ul>
     </nav>
+</header>
 
-    <form>
-        <h3>Cadastro de nova receita</h3>
-        <input type="text" placeholder="Nome da receita" id="Nome da receita">
-        <input type="text" placeholder="Descrição" id="Descrição">
-        <input type="number" placeholder="Custo" id="Custo">
-        <input type="number" placeholder="Tempo de preparo" id="Tempo de preparo">
-        <a href="recipe.html">Adicionar receita nova!</a>
 
-    </form>
+<body>
+    <div class="container">
+        <div class="form">
+            <form action="#">
+                <div class="form-header">
+
+                    <div class="title">
+                        <h1>Adicione uma nova receita</h1>
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <div class="input-box">
+                        <label>Nome do prato</label>
+                        <input type="text" placeholder="Digite o nome do prato" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label>Pessoas servidas</label>
+                        <select name="numbers" id="numbers" class="select-box">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                        </select>
+                    </div>
+
+                    <div class="input-box">
+                        <label>Valor</label>
+                        <input type="number" placeholder="Qual o valor do prato?" required>
+                    </div>
+
+                </div>
+
+                <div class="input-box">
+                    <label>Descrição</label>
+                    <input type="text" placeholder="Digite a descrição do prato">
+                </div>
+                <div class="input-box">
+                    <label for="image-upload">Selecionar foto da receita</label>
+                    <input type="file" id="image-upload" accept="image/*">
+                </div>
+
+                <div class="continue-button">
+                    <input type="button" onclick="alert('Receita adicionada com sucesso!')" id="btncontinue"
+                        value="Adicionar">
+                </div>
+            </form>
+        </div>
+    </div>
 </body>
+
+</html>

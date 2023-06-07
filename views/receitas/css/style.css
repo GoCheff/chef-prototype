@@ -96,14 +96,3 @@ body {
     font-weight: bold;
 }
   
-.container .edit-button {
-    position: absolute; 
-    bottom: 10px; 
-    left: 10px; 
-    background-color: #ccc;
-    color: #fff;
-    padding: 5px 10px;
-    border: none;
-    border-radius: 5px;
-    z-index: 1;
-}
