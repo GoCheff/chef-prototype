@@ -1,82 +1,71 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport">
     <link rel="stylesheet" href="css/style.css">
     <title>Adicionar nova receita</title>
 </head>
 
-<header class="menu-topo">
-    <nav>
-        <ul>
-            <li class="primeiro-item"><a href="../home/home.html">Página Inicial</a></li>
-            <li><a href="../verificarPedidos/verificarPedidos.html">Verificar pedidos</a></li>
-            <li><a href="../pedidos/pedidos.html">Novos pedidos</a></li>
-            <li><a href="../receitas/receitas.html">Receitas</a></li>
-            <li><a href="../addReceita/adicionarReceita.html">Adicionar receita</a></li>
-        </ul>
-    </nav>
-</header>
-
-
 <body>
-    <div class="container">
-        <div class="form">
-            <form action="#">
-                <div class="form-header">
-                    <div class="title">
-                        <h1>Adicione uma nova receita</h1>
-                    </div>
+    <header class="menu-topo">
+        <nav>
+            <ul>
+                <li class="primeiro-item"><a href="../home/home.html">Página Inicial</a></li>
+                <li><a href="../verificarPedidos/verificarPedidos.html">Verificar pedidos</a></li>
+                <li><a href="../pedidos/pedidos.html">Novos pedidos</a></li>
+                <li><a href="../receitas/receitas.html">Receitas</a></li>
+                <li><a href="../addReceita/adicionarReceita.html">Adicionar receita</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div id="esquerda"></div>
+        <div id="meio">
+            <div id="cima">
+                <h1>Adicione uma nova receita</h1>
+            </div>
+            <div id="centro">
+                <div id="centroEsquerda">
+                    <label>Nome do prato</label>
+                    <input type="text" placeholder="Digite o nome do prato" required>
                 </div>
-
-                <div class="input-group">
-                    <div class="input-box">
-                        <label>Nome do prato</label>
-                        <input type="text" placeholder="Digite o nome do prato" required>
-                    </div>
-
-                    <div class="input-box">
-                        <label>Pessoas servidas</label>
-                        <select name="numbers" id="numbers" class="select-box">
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                            <option value="5">5</option>
-                            <option value="6">6</option>
-                            <option value="7">7</option>
-                            <option value="8">8</option>
-                            <option value="9">9</option>
-                            <option value="10">10</option>
-                        </select>
-                    </div>
-
-                    <div class="input-box">
-                        <label>Valor</label>
-                        <input type="number" placeholder="Qual o valor do prato?" required>
-                    </div>
-
+                <div id="centroMeio">
+                    <label>Pessoas servidas</label><br>
+                    <select name="numbers" id="numbers" class="select-box">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                    </select>
                 </div>
+                <div id="centroDireita">
+                    <label>Valor</label><br>
+                    <input type="number" placeholder="Qual o valor do prato?" required>
+                </div>
+            </div>
+            <div id="baixo">
+                <label>Descrição</label><br>
+                <input type="text" class="tamanho" placeholder="Digite a descrição do prato">
+                <br>
 
-                <div class="input-box">
-                    <label>Descrição</label>
-                    <input type="text" placeholder="Digite a descrição do prato">
-                </div>
-                <div class="input-box">
-                    <label for="image-upload">Selecionar foto da receita</label>
-                    <input type="file" id="image-upload" accept="image/*">
-                </div>
+                <label for="image-upload">Selecionar foto da receita</label><br>
+                <input type="file" id="image-upload" class="tamanho" accept="image/*"><br>
 
-                <div class="continue-button">
-                    <input type="button" onclick="alert('Receita adicionada com sucesso!')" id="btncontinue"
-                        value="Adicionar">
-                </div>
-            </form>
+                <input id="botao" type="button" onclick="alert('Receita adicionada com sucesso!')" value="Adicionar">
+
+            </div>
         </div>
-    </div>
+        <div id="direita"></div>
+    </main>
 </body>
 
 </html>
